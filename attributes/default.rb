@@ -1,3 +1,3 @@
 # Timeout value for service discovery
 
-default['hadooptack']['discovery']['timeout'] = 30
+default['hadoopstack']['discovery']['timeout'] = 30
