@@ -30,6 +30,9 @@ master_node_array.each do |master|
 	break
 end
 
+# Sets max tasks dynamically on the tasktracker based on the number of cores
+node.set['hadoop']['map_tasks_maximum'] = (1.5 * node['cpu']['total']).floor
+
 include_recipe 'hadoop::config'
 include_recipe 'hadoop::datanode'
 include_recipe 'hadoop::tasktracker'
