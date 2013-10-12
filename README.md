@@ -1,7 +1,7 @@
 hadoopstack-hadoop-cookbook
 ===========================
 
-A wrapper cookbook of hadoop-cookbook containing HadoopStack specific
+A wrapper cookbook of hadoop-cookbook containing MultiStack specific
 changes.
 
 It assumes that each cluster node is assigned a chef node-name in the
