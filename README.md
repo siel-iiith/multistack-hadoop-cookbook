@@ -1,7 +1,7 @@
 hadoopstack-hadoop-cookbook
 ===========================
 
-A wrapper cookbook of hadoop-cookbook containing HadoopStack specific
+A wrapper cookbook of [hadoop-cookbook] (https://github.com/siel-iiith/hadoop-cookbook) containing [MultiStack] (https://github.com/siel-iiith/MultiStack) specific
 changes.
 
 It assumes that each cluster node is assigned a chef node-name in the
