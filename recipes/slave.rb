@@ -24,8 +24,8 @@ end
 log "master node array #{master_node_array} #{master_node_array.length}"
 
 master_node_array.each do |master|
-	node.set['hadoop']['namenode'] = master['ipaddress']
-	node.set['hadoop']['jobtracker'] = master['ipaddress']
+	node.set['hadoop']['namenode']['address'] = master['ipaddress']
+	node.set['hadoop']['jobtracker']['address'] = master['ipaddress']
 	log "Master has IP address #{node["ipaddress"]}"
 	break
 end
